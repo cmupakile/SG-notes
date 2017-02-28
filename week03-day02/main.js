@@ -38,10 +38,42 @@ console.log('------- this is an object I guess ------ ');
 } else {
   console.log('------ I guess this is not an object');
 }
- /*
+ /* //this here here is another valid way of creating an obj with properties
 var p = {};
-
+p.firstName = 'Fred';
+p.lastName = 'Flintstone';
+and so on and so forth
 
  */
 /*ARRAY
 var ages = [ 24, 23, 29, 32];*/
+
+//FUNCTIONS
+console.log('----- FUNCTIONS ----')
+//when this function is called you get these parameters
+function createPerson(firstNameParam, lastNameParam, emailParam, ageParam){
+  var newPerson = {
+    //properties that will be referred to
+    firstName: firstNameParam,
+    lastName: lastNameParam,
+    email: emailParam,
+    age: ageParam
+
+  };
+  return newPerson; //this function makes the result of this code available outside the function
+}
+
+var harald = createPerson('Harald', 'Kumar', 'h.kumar@example.com', 15);
+console.log('newPerson:', harald);
+
+function isOldEnough(age){
+  return (age >= 18);
+}
+
+if (isOldEnough(17)){
+  console.log('Come in.')
+} else {
+   {
+     console.log('Come back when you are older.')
+   }
+}
