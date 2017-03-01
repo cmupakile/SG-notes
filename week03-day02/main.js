@@ -27,14 +27,14 @@ var person3 = {
 
 var people = [person1, person2, person3];
 for (var i = 0; i < people.length; i++){
-console.log(people[i].firstName/* connects you to the object you want in the ARRAY*/, people[i].age);
+  console.log(people[i].firstName/* connects you to the object you want in the ARRAY*/, people[i].age);
 }
 
 //this test comes out on the else side of things because it actually creates two different obj and thus it does not compare the same obj
 var testObject = {};
 
 if (testObject === {}){
-console.log('------- this is an object I guess ------ ');
+  console.log('------- this is an object I guess ------ ');
 } else {
   console.log('------ I guess this is not an object');
 }
@@ -52,7 +52,7 @@ var capitalCity = 'London'; //global variable
 
 
 //FUNCTIONS
-console.log('----- FUNCTIONS ----')
+console.log('----- FUNCTIONS ----');
 //when this function is called you get these parameters
 function createPerson(firstNameParam, lastNameParam, emailParam, ageParam){
   var newPerson = {
@@ -84,11 +84,11 @@ function isOldEnough(age){
 }
 
 if (isOldEnough(17)){
-  console.log('Come in.')
+  console.log('Come in.');
 } else {
-   {
-     console.log('Come back when you are older.')
-   }
+  {
+    console.log('Come back when you are older.');
+  }
 }
 
 // var oldEnoughComment;
@@ -102,7 +102,7 @@ if (isOldEnough(17)){
 //   console.log(people[i].fullName(), isOldEnough(people[i].age))?'is old enough':'is NOT old enough');
 // }
 
-console.log('------ Obj Oriented Javascript:')
+console.log('------ Obj Oriented Javascript:');
                //class
 var coin = new Circle(1.2);
 var plate = new Circle(7);
@@ -125,7 +125,7 @@ function Circle(radius) {
 //static (or class) property/var
 Circle.PI = 22/7;
 
-//another instance method 
+//another instance method
 //for every new instance of this circle i want you to create a new area for it
 //attached to the prototype -- it is part of the circle class. when javascript does new:
 //it says in this obj that is passed back into the var here
@@ -137,7 +137,7 @@ Circle.prototype.area = function() {
 
 for (i = 0; i < circles.length; i++){
                          //property
-console.log('Radius is', circles[i].radius);
-console.log('circumference is', circles[i].circumference());
-console.log('Area is:', circles[i].area()); //method
+  console.log('Radius is', circles[i].radius);
+  console.log('circumference is', circles[i].circumference());
+  console.log('Area is:', circles[i].area()); //method
 }
