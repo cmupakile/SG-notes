@@ -8,6 +8,7 @@
   "main": "",
   "license": "MIT",
   "dependencies": {
-    "skeleton": "https://github.com/dhgamache/Skeleton.git#^2.0.4"
+    "skeleton": "https://github.com/dhgamache/Skeleton.git#^2.0.4",
+    "jquery": "^3.1.1"
   }
 }
