@@ -1,8 +1,20 @@
 console.log('in the main.js');
 
-document.addEventListener('DOMContentLoaded', function(){  //wait for DOM to be ready before running the JS
+$(function(){
+  console.log('DOM loaded (jQuery)');
 
+  var newListItem = $( '<li>new item added by jQuery</li>').addClass( '.garish' );
+  
+  console.log()
+
+});
+
+document.addEventListener('DOMContentLoaded', function(){  //wait for DOM to be ready before running the JS
+  console.log('DOM loaded -- other');
   console.log(document.body);
+
+
+
 
                         //when usig query you need the css versions of code to reference them
                         //this would not work without saying .selected
